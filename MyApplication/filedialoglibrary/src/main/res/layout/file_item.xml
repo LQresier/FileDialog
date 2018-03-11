@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/image_file"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_dir"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/name_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的文件夹1"
+        android:layout_toRightOf="@id/image_file"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:textColor="#555555"/>
+    
+    <TextView
+        android:id="@+id/size_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件夹"
+        android:layout_below="@id/name_file"
+        android:layout_toRightOf="@id/image_file"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/time_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-01-20 15:20:33"
+        android:layout_toRightOf="@id/size_file"
+        android:layout_below="@id/name_file"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
